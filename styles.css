@@ -186,6 +186,15 @@
   -ms-transform: translate(-50%, -50%) rotate(360deg);
   -o-transform: translate(-50%, -50%) rotate(360deg);
 }
+
+.price-button{
+  background-color: black;
+  color: white;
+  align-items: center;
+  height: 25px;
+  width: 100px;
+}
+
 .review {
   display: flex;
 }
