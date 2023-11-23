@@ -54,15 +54,18 @@
 }
 
 .cards [class^="container"] {
-  background: transparent;
   display: flex;
   margin: 30px;
 }
 
 .cards [class^="container"]:hover {
-  box-shadow:1px 1px 1px 1px #0ff;
   display: flex;
   margin: 30px;
+  transition: ease-in-out 0.3s;
+  -webkit-transition: ease-in-out 0.3s;
+  -moz-transition: ease-in-out 0.3s;
+  -ms-transition: ease-in-out 0.3s;
+  -o-transition: ease-in-out 0.3s;
 }
 
 .cards1 {
@@ -88,6 +91,7 @@
 }
 
 .contain-item-description {
+  background: transparent;
   display: flex;
   flex-direction: column;
   margin: 15px;
@@ -104,6 +108,7 @@
   border-radius: 10px;
   box-shadow: inset 0 0 0 0 #FDD902;
   color: black;
+  cursor: pointer;
   font-size: 15px;
   letter-spacing: 1px;
   padding: 15px 30px;
@@ -129,6 +134,7 @@
   border-radius: 10px;
   box-shadow: inset 0 0 0 0 #FFA14D;
   color: black;
+  cursor: pointer;
   font-size: 15px;
   letter-spacing: 1px;
   padding: 15px 30px;
@@ -154,6 +160,7 @@
   border-radius: 10px;
   box-shadow: inset 0 0 0 0 #FF0013;
   color: black;
+  cursor: pointer;
   font-size: 15px;
   letter-spacing: 1px;
   padding: 15px 30px;
@@ -179,6 +186,7 @@
   border-radius: 10px;
   box-shadow: inset 0 0 0 0 #00A3FF;
   color: black;
+  cursor: pointer;
   font-size: 15px;
   letter-spacing: 1px;
   padding: 15px 30px;
@@ -245,11 +253,29 @@
 }
 
 .price-button{
-  background-color: black;
+  background: black;
+  border-radius: 10px;
   color: white;
-  align-items: center;
-  height: 25px;
-  width: 100px;
+  cursor: pointer;
+  font-size: 15px;
+  letter-spacing: 1px;
+  padding: 15px 30px;
+  text-align: center;
+  text-decoration: none;
+  transition: ease-out 0.3s;
+  margin: 15px;
+  -webkit-transition: ease-out 0.3s;
+  -moz-transition: ease-out 0.3s;
+  -ms-transition: ease-out 0.3s;
+  -o-transition: ease-out 0.3s;
+}
+
+.price-button:active{
+  transform: scale(0.9);
+  -webkit-transform: scale(0.9);
+  -moz-transform: scale(0.9);
+  -ms-transform: scale(0.9);
+  -o-transform: scale(0.9);
 }
 
 .review {
@@ -259,9 +285,27 @@
   text-align: center;
 }
 
-button
-
 h2 {
   text-align: center;
 }
 
+header{
+  display: flex;
+  align-items: center;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+header li{
+  list-style-type: none;
+  text-align: end;
+  width: 60px;
+}
+
+nav ul{
+  display: flex;
+}
+
+nav img{
+  width: 7%;
+}
