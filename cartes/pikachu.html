@@ -3,19 +3,25 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="/cartes/styles.css" />
     <title>Pikachu Illustrator</title>
   </head>
   <body>
     <header>
-      <div class="header-pokeball-logo">
-        <a href="../index.html">
-          <img src="../assets/img/logo.png" alt="logo" />
+      <div>
+        <a href="index.html">
+          <img
+            src="assets/img/pokeball_PNG19.png"
+            alt="logo"
+            class="header-pokeball-logo"
+          />
         </a>
       </div>
       <nav>
         <ul>
+          <img src="/assets/img/cards-icon-menu.png" alt="" />
           <li><a href="#" class="menu-cartes">Cartes</a></li>
+          <img src="/assets/img/contact-icon-menu.png" alt="" />
           <li><a href="#contact" class="menu-contact">Contact</a></li>
         </ul>
       </nav>
@@ -23,10 +29,14 @@
 
     <!-- BANDEAU -->
     <div class="bandeau">
-      <div class="bg-bandeau">Bandeau</div>
-      <div class="pokeball-logo">
+      <div class="bg-bandeau"></div>
+      <div>
         <a href="#">
-          <img src="../assets/img/logo.png" alt="logo2" />
+          <img
+            src="assets/img/pokeball_PNG19.png"
+            alt="pokeball-logo"
+            class="pokeball-logo"
+          />
         </a>
       </div>
     </div>
@@ -45,8 +55,9 @@
       <div class="edition">Edition</div>
       <div class="pikachu-illustrator">
         <img
-          src="../assets/img/pikachu-illustrator.jpeg"
+          src="../assets/img/pikachu.png"
           alt="pikachu-illustrator"
+          class="card-img-pikachu"
         />
       </div>
       <div class="price-button">6'000'000 P</div>
@@ -55,23 +66,36 @@
     <!-- FORMULAIRE DE CONTACT -->
     <section id="contact">
       <h2>Nous Contacter</h2>
+
       <form action="#">
-        <label for="name">NOM*</label>
-        <input type="text" id="name" name="name" required />
-        <label for="name">Prénom*</label>
-        <input type="text" id="prenom" name="prenom" required />
-        <label for="email">Mail*</label>
-        <input type="email" id="email" name="email" required />
-        <label for="message">Message*</label>
-        <textarea
-          name="message"
-          cols="50"
-          rows="10"
-          id="message"
-          required
-        ></textarea>
-        <p>* Champ obligatoire</p>
-        <input type="submit" value="SEND" />
+        <div class="contact-form">
+          <label for="name">NOM*</label>
+          <input type="text" id="name" name="name" required />
+          <label for="name">Prénom*</label>
+          <input type="text" id="prenom" name="prenom" required />
+          <label for="email">Mail*</label>
+          <input type="email" id="email" name="email" required />
+          <label for="message">Message*</label>
+          <textarea
+            name="message"
+            cols="50"
+            rows="10"
+            id="message"
+            required
+          ></textarea>
+          <p>* Champ obligatoire</p>
+        </div>
+        <!-- MISE EN PLACE DE LA PARTIE BASSE DE LA GAMEBOY -->
+        <div>
+          <div class="gameboy-button">
+            <div class="gameboy-arrows"></div>
+            <div class="gameboy-button-a-b"></div>
+          </div>
+          <div class="gameboy-sart-buttons"></div>
+        </div>
+        <div class="contact-form-send">
+          <input type="submit" value="SEND" />
+        </div>
       </form>
     </section>
 
