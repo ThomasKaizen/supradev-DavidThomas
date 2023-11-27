@@ -384,3 +384,13 @@ nav ul {
 nav img {
   width: 7%;
 }
+
+@media screen and (max-width: 900px) and (min-device-width: 0px) {
+  .cards {
+    flex-direction: column;
+}
+
+  .review{
+    flex-direction: column;
+  }
+}
