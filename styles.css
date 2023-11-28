@@ -88,7 +88,7 @@
   flex-wrap: nowrap;
 }
 
-.card-review p{
+.card-review p {
   padding-left: 20px;
   padding-right: 20px;
 }
@@ -133,11 +133,12 @@
   align-items: center;
   background-color: #fcc900;
   border-radius: 0 0 10px 10px;
-  border-bottom: #EEBE00 solid 10px;
-  border-right: #EEBE00 solid 10px;
-  border-left: #EEBE00 solid 10px;
+  border-bottom: #eebe00 solid 10px;
+  border-right: #eebe00 solid 10px;
+  border-left: #eebe00 solid 10px;
   display: flex;
   flex-direction: column;
+  height: 200px;
   margin: auto;
   width: 50%;
   -webkit-border-radius: 0 0 10px 10px;
@@ -159,8 +160,30 @@
   -o-border-radius: 100%;
 }
 
+.gameboy-arrows {
+  align-items: center;
+  display: flex;
+  justify-content:center ;
+}
+
+.gameboy-button {
+  display: flex;
+}
+
 .header-pokeball-logo {
   width: 3%;
+}
+
+.hz-arrow {
+  background-color: black;
+  border-radius: 5px;
+  height: 50px;
+  position: absolute;
+  width: 100px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
 }
 
 .infos-button-pikachu {
@@ -346,6 +369,18 @@
   text-align: center;
 }
 
+.vertical-arrow {
+  background-color: black;
+  border-radius: 5px;
+  height: 100px;
+  position: absolute;
+  width: 50px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
 footer {
   display: flex;
   margin-top: 30px;
@@ -387,9 +422,9 @@ nav img {
 @media screen and (max-width: 900px) and (min-device-width: 0px) {
   .cards {
     flex-direction: column;
-}
+  }
 
-  .review{
+  .review {
     flex-direction: column;
   }
 }
