@@ -21,6 +21,14 @@
   margin-top: auto;
 }
 
+.cancel-button:active{
+  transform: scale(0.9);
+  -webkit-transform: scale(0.9);
+  -moz-transform: scale(0.9);
+  -ms-transform: scale(0.9);
+  -o-transform: scale(0.9);
+}
+
 .cards {
   display: flex;
   margin: 10px;
@@ -120,26 +128,17 @@
 .contact-form input {
   background-color: rgb(185, 185, 185);
   font-family: "Courier New", Courier, monospace;
-  width: 50%;
+  width: 90%;
 }
 
 .contact-form textarea {
   background-color: rgb(185, 185, 185);
   font-family: "Courier New", Courier, monospace;
-  width: 50%;
+  width: 90%;
 }
 
-.contact-form-send input {
-  background-color: black;
-  border-radius: 100%;
-  color: white;
-  height: 50px;
-  text-align: center;
-  width: 50px;
-  -webkit-border-radius: 100%;
-  -moz-border-radius: 100%;
-  -ms-border-radius: 100%;
-  -o-border-radius: 100%;
+.contact-form-send {
+  margin-left: 100%;
 }
 
 .gameboy-arrows {
@@ -164,6 +163,23 @@
   -moz-border-radius: 0 0 10px 10px;
   -ms-border-radius: 0 0 10px 10px;
   -o-border-radius: 0 0 10px 10px;
+}
+
+.gameboy-button-a-b {
+  width: 100px;
+}
+
+.gameboy-button-a-b input {
+  background-color: black;
+  border-radius: 100%;
+  color: white;
+  height: 60px;
+  text-align: center;
+  width: 60px;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -o-border-radius: 100%;
 }
 
 .header-pokeball-logo {
@@ -434,6 +450,26 @@ nav img {
 @media screen and (max-width: 900px) and (min-device-width: 0px) {
   .cards {
     flex-direction: column;
+  }
+
+  .contact-form{
+    width: 80%;
+  }
+
+  .contact-form input {
+    background-color: rgb(185, 185, 185);
+    font-family: "Courier New", Courier, monospace;
+    width: 90%;
+  }
+  
+  .contact-form textarea {
+    background-color: rgb(185, 185, 185);
+    font-family: "Courier New", Courier, monospace;
+    width: 90%;
+  }
+
+  .gameboy-button{
+    width: 80%;
   }
 
   .review {
