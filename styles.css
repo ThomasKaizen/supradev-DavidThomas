@@ -129,24 +129,6 @@
   width: 50%;
 }
 
-.contact-form-send {
-  align-items: center;
-  background-color: #fcc900;
-  border-radius: 0 0 10px 10px;
-  border-bottom: #eebe00 solid 10px;
-  border-right: #eebe00 solid 10px;
-  border-left: #eebe00 solid 10px;
-  display: flex;
-  flex-direction: column;
-  height: 200px;
-  margin: auto;
-  width: 50%;
-  -webkit-border-radius: 0 0 10px 10px;
-  -moz-border-radius: 0 0 10px 10px;
-  -ms-border-radius: 0 0 10px 10px;
-  -o-border-radius: 0 0 10px 10px;
-}
-
 .contact-form-send input {
   background-color: black;
   border-radius: 100%;
@@ -163,11 +145,25 @@
 .gameboy-arrows {
   align-items: center;
   display: flex;
-  justify-content:center ;
+  justify-content: center;
 }
 
 .gameboy-button {
+  align-items: center;
+  background-color: #fcc900;
+  border-radius: 0 0 10px 10px;
+  border-bottom: #eebe00 solid 10px;
+  border-right: #eebe00 solid 10px;
+  border-left: #eebe00 solid 10px;
   display: flex;
+  height: 200px;
+  justify-content: space-around;
+  margin: auto;
+  width: 50%;
+  -webkit-border-radius: 0 0 10px 10px;
+  -moz-border-radius: 0 0 10px 10px;
+  -ms-border-radius: 0 0 10px 10px;
+  -o-border-radius: 0 0 10px 10px;
 }
 
 .header-pokeball-logo {
@@ -177,13 +173,21 @@
 .hz-arrow {
   background-color: black;
   border-radius: 5px;
-  height: 50px;
+  height: 40px;
   position: absolute;
   width: 100px;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   -ms-border-radius: 5px;
   -o-border-radius: 5px;
+}
+
+.hz-arrow:active {
+  transform: scale(0.9);
+  -webkit-transform: scale(0.9);
+  -moz-transform: scale(0.9);
+  -ms-transform: scale(0.9);
+  -o-transform: scale(0.9);
 }
 
 .infos-button-pikachu {
@@ -374,11 +378,19 @@
   border-radius: 5px;
   height: 100px;
   position: absolute;
-  width: 50px;
+  width: 40px;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   -ms-border-radius: 5px;
   -o-border-radius: 5px;
+}
+
+.vertical-arrow:active {
+  transform: scale(0.9);
+  -webkit-transform: scale(0.9);
+  -moz-transform: scale(0.9);
+  -ms-transform: scale(0.9);
+  -o-transform: scale(0.9);
 }
 
 footer {
