@@ -81,17 +81,16 @@
 }
 
 .card-review {
-  background: rgb(0, 212, 255);
-  background: linear-gradient(
-    90deg,
-    rgba(0, 212, 255, 0.4766500350140056) 0%,
-    rgba(0, 212, 255, 0.5018601190476191) 100%
-  );
+  border: double black 5px;
   display: flex;
   flex-direction: column;
-  align-items: center;
   margin: 10px;
   flex-wrap: nowrap;
+}
+
+.card-review p{
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .contain-item-description {
