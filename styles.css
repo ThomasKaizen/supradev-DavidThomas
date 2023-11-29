@@ -337,17 +337,16 @@
   -o-border-radius: 5px;
 }
 
-.introduction-text {
+/* .introduction-text {
   animation: typewriter 4s steps(44) 1s 1 normal both,
     blinkTextCursor 500ms steps(44) infinite normal;
-  /* border-right: 2px solid black; */
+  order-right: 2px solid black;
   overflow: hidden;
   text-align: center;
-
 }
 
-/* Oui ... j'ai pompé l'effet, mais je voulais vraiment celui-là ah ah */
-/* @keyframes typewriter {
+Oui ... j'ai pompé l'effet, mais je voulais vraiment celui-là ah ah 
+@keyframes typewriter {
   from {
     width: 0;
   }
@@ -362,7 +361,7 @@
   to {
     border-right-color: transparent;
   }
-} */
+}  */
 
 .pokeball-logo {
   position: absolute;
