@@ -29,31 +29,51 @@
 
     <!-- BANDEAU -->
     <div class="bandeau">
-      <div class="bg-bandeau">Bandeau</div>
-      <div class="pokeball-logo">
+      <div class="bg-bandeau"></div>
+      <div>
         <a href="#">
-          <img src="../assets/img/logo.png" alt="logo2" />
+          <img
+            src="/assets/img/pokeball_PNG19.png"
+            alt="pokeball-logo"
+            class="pokeball-logo"
+          />
         </a>
       </div>
     </div>
 
     <!-- TEXT INTRODUCTIF -->
     <div class="introduction">
-      <h1>Dracaufeu Holo shadowless</h1>
-      <div class="menu-nintendo">Menu-Nintendo</div>
+      <h2 class="introduction-text">Dracaufeu Holo shadowless 1ere édition</h2>
     </div>
 
     <!-- DETAILS CARTE -->
     <section id="container">
-      <div class="lot">Lot</div>
-      <div class="card-status">Etat de la carte</div>
-      <div class="rarity">Rareté</div>
-      <div class="edition">Edition</div>
-      <div class="pikachu-illustrator">
-        <img
-          src="../assets/img/dracaufeu-holo.jpeg"
-          alt="Dracaufeu Holo shadowless"
-        />
+      <div class="card-info">
+        <div class="pikachu-illustrator">
+          <img
+            src="../assets/img/dracaufeu-holo.jpeg"
+            alt="dracaufeu-holo"
+            class="card-img"
+          />
+        </div>
+        <table>
+          <tr>
+            <th>Lot</th>
+            <th>Etat</th>
+          </tr>
+          <tr>
+            <td>Fait partie du lot numéro XXX</td>
+            <td>Grade 10</td>
+          </tr>
+          <tr>
+            <th>Rareté</th>
+            <th>Edition</th>
+          </tr>
+          <tr>
+            <td>XXX Exemplaire</td>
+            <td>XXXXXX</td>
+          </tr>
+        </table>
       </div>
       <div class="price-button">450'000 P</div>
     </section>
@@ -61,29 +81,46 @@
     <!-- FORMULAIRE DE CONTACT -->
     <section id="contact">
       <h2>Nous Contacter</h2>
+
       <form action="#">
-        <label for="name">NOM*</label>
-        <input type="text" id="name" name="name" required />
-        <label for="name">Prénom*</label>
-        <input type="text" id="prenom" name="prenom" required />
-        <label for="email">Mail*</label>
-        <input type="email" id="email" name="email" required />
-        <label for="message">Message*</label>
-        <textarea
-          name="message"
-          cols="50"
-          rows="10"
-          id="message"
-          required
-        ></textarea>
-        <p>* Champ obligatoire</p>
-        <input type="submit" value="SEND" />
+        <div class="contact-form">
+          <label for="name">NOM*</label>
+          <input type="text" id="name" name="name" required />
+          <label for="name">Prénom*</label>
+          <input type="text" id="prenom" name="prenom" required />
+          <label for="email">Mail*</label>
+          <input type="email" id="email" name="email" required />
+          <label for="message">Message*</label>
+          <textarea
+            name="message"
+            cols="50"
+            rows="10"
+            id="message"
+            required
+          ></textarea>
+          <p>* Champ obligatoire</p>
+        </div>
+        <!-- MISE EN PLACE DE LA PARTIE BASSE DE LA GAMEBOY -->
+        <div>
+          <div class="gameboy-button">
+            <div class="gameboy-arrows"></div>
+            <div class="gameboy-button-a-b"></div>
+          </div>
+          <div class="gameboy-sart-buttons"></div>
+        </div>
+        <div class="contact-form-send">
+          <input type="submit" value="SEND" />
+        </div>
       </form>
     </section>
 
     <footer>
       <div>
-        <img src="../assets/img/logo.png" alt="logo" />
+        <img
+          src="/assets/img/pokeball_PNG19.png"
+          alt="logo"
+          class="header-pokeball-logo"
+        />
       </div>
       <div>
         <a href="#"
