@@ -340,14 +340,14 @@
 .introduction-text {
   animation: typewriter 4s steps(44) 1s 1 normal both,
     blinkTextCursor 500ms steps(44) infinite normal;
-  border-right: 2px solid black;
+  /* border-right: 2px solid black; */
   overflow: hidden;
   text-align: center;
-  white-space: nowrap;
+
 }
 
 /* Oui ... j'ai pompé l'effet, mais je voulais vraiment celui-là ah ah */
-@keyframes typewriter {
+/* @keyframes typewriter {
   from {
     width: 0;
   }
@@ -362,7 +362,7 @@
   to {
     border-right-color: transparent;
   }
-}
+} */
 
 .pokeball-logo {
   position: absolute;
