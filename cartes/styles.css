@@ -51,7 +51,9 @@
 .card-info{
   align-items: center;
   display: flex;
-  justify-content:space-around ;
+  justify-content:space-evenly ;
+  margin-bottom: 20px;
+  margin-top: 20px;
 }
 
 .contact-form {
@@ -275,6 +277,15 @@ nav ul {
 
 nav img {
   width: 7%;
+}
+
+table{
+  border: solid 1px black;
+  text-align: center;
+}
+
+th{
+  background-color: #f3ce3b;
 }
 
 @media screen and (max-width: 900px) and (min-device-width: 0px) {
