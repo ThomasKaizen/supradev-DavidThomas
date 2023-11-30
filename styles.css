@@ -1,3 +1,50 @@
+#cards {
+  display: flex;
+  margin: 10px;
+}
+
+#cards img {
+  width: auto;
+  height: 300px;
+  perspective: 1000px;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+  box-shadow: rgba(142, 142, 142, 0.5) 0px 30px 30px -10px;
+  transition: all 0.5s ease-in-out;
+}
+
+#cards img:hover {
+  width: auto;
+  height: 300px;
+  background-position: -100px 100px, -100px 100px;
+  transform: rotate3d(0.5, 1, 0, 30deg);
+  transition: 0.3s;
+  -webkit-transition: all 0.3s ea3se-in-out;
+  -moz-transition: all 0.3s ea3se-in-out;
+  -ms-transition: all 0.3s ea3se-in-out;
+  -o-transition: all 0.3s ea3se-in-out;
+  box-shadow: rgba(142, 142, 142, 0.5) 0px 30px 30px -10px;
+  transition: all 0.3s ea3se-in-out;
+}
+
+#cards [class^="container"] {
+  display: flex;
+  margin: 30px;
+}
+
+#cards [class^="container"]:hover {
+  display: flex;
+  margin: 30px;
+  transition: ease-in-out 0.3s;
+  -webkit-transition: ease-in-out 0.3s;
+  -moz-transition: ease-in-out 0.3s;
+  -ms-transition: ease-in-out 0.3s;
+  -o-transition: ease-in-out 0.3s;
+}
+
 .bandeau {
   position: relative;
 }
@@ -27,53 +74,6 @@
   -moz-transform: scale(0.9);
   -ms-transform: scale(0.9);
   -o-transform: scale(0.9);
-}
-
-.cards {
-  display: flex;
-  margin: 10px;
-}
-
-.cards img {
-  width: auto;
-  height: 300px;
-  perspective: 1000px;
-  transition: 0.3s;
-  -webkit-transition: 0.3s;
-  -moz-transition: 0.3s;
-  -ms-transition: 0.3s;
-  -o-transition: 0.3s;
-  box-shadow: rgba(142, 142, 142, 0.5) 0px 30px 30px -10px;
-  transition: all 0.5s ease-in-out;
-}
-
-.cards img:hover {
-  width: auto;
-  height: 300px;
-  background-position: -100px 100px, -100px 100px;
-  transform: rotate3d(0.5, 1, 0, 30deg);
-  transition: 0.3s;
-  -webkit-transition: all 0.3s ea3se-in-out;
-  -moz-transition: all 0.3s ea3se-in-out;
-  -ms-transition: all 0.3s ea3se-in-out;
-  -o-transition: all 0.3s ea3se-in-out;
-  box-shadow: rgba(142, 142, 142, 0.5) 0px 30px 30px -10px;
-  transition: all 0.3s ea3se-in-out;
-}
-
-.cards [class^="container"] {
-  display: flex;
-  margin: 30px;
-}
-
-.cards [class^="container"]:hover {
-  display: flex;
-  margin: 30px;
-  transition: ease-in-out 0.3s;
-  -webkit-transition: ease-in-out 0.3s;
-  -moz-transition: ease-in-out 0.3s;
-  -ms-transition: ease-in-out 0.3s;
-  -o-transition: ease-in-out 0.3s;
 }
 
 .cards1 {
@@ -462,6 +462,10 @@ header li {
   width: 60px;
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 label {
   color: white;
   font-weight: bold;
@@ -479,7 +483,7 @@ nav img {
 }
 
 @media screen and (max-width: 900px) and (min-device-width: 0px) {
-  .cards {
+  #cards {
     flex-direction: column;
   }
 
