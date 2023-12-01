@@ -1,89 +1,272 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Welcome to Firebase Hosting</title>
-
-    <!-- update the version number as needed -->
-    <script defer src="/__/firebase/10.7.0/firebase-app-compat.js"></script>
-    <!-- include only the Firebase features as you need -->
-    <script defer src="/__/firebase/10.7.0/firebase-auth-compat.js"></script>
-    <script defer src="/__/firebase/10.7.0/firebase-database-compat.js"></script>
-    <script defer src="/__/firebase/10.7.0/firebase-firestore-compat.js"></script>
-    <script defer src="/__/firebase/10.7.0/firebase-functions-compat.js"></script>
-    <script defer src="/__/firebase/10.7.0/firebase-messaging-compat.js"></script>
-    <script defer src="/__/firebase/10.7.0/firebase-storage-compat.js"></script>
-    <script defer src="/__/firebase/10.7.0/firebase-analytics-compat.js"></script>
-    <script defer src="/__/firebase/10.7.0/firebase-remote-config-compat.js"></script>
-    <script defer src="/__/firebase/10.7.0/firebase-performance-compat.js"></script>
-    <!-- 
-      initialize the SDK after all desired features are loaded, set useEmulator to false
-      to avoid connecting the SDK to running emulators.
-    -->
-    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
-
-    <style media="screen">
-      body { background: #ECEFF1; color: rgba(0,0,0,0.87); font-family: Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
-      #message { background: white; max-width: 360px; margin: 100px auto 16px; padding: 32px 24px; border-radius: 3px; }
-      #message h2 { color: #ffa100; font-weight: bold; font-size: 16px; margin: 0 0 8px; }
-      #message h1 { font-size: 22px; font-weight: 300; color: rgba(0,0,0,0.6); margin: 0 0 16px;}
-      #message p { line-height: 140%; margin: 16px 0 24px; font-size: 14px; }
-      #message a { display: block; text-align: center; background: #039be5; text-transform: uppercase; text-decoration: none; color: white; padding: 16px; border-radius: 4px; }
-      #message, #message a { box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
-      #load { color: rgba(0,0,0,0.4); text-align: center; font-size: 13px; }
-      @media (max-width: 600px) {
-        body, #message { margin-top: 0; background: white; box-shadow: none; }
-        body { border-top: 16px solid #ffa100; }
-      }
-    </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Best Pokemon Cards</title>
   </head>
   <body>
-    <div id="message">
-      <h2>Welcome</h2>
-      <h1>Firebase Hosting Setup Complete</h1>
-      <p>You're seeing this because you've successfully setup Firebase Hosting. Now it's time to go build something extraordinary!</p>
-      <a target="_blank" href="https://firebase.google.com/docs/hosting/">Open Hosting Documentation</a>
+    <header>
+      <div>
+        <a href="index.html">
+          <img
+            src="assets/img/pokeball_PNG19.png"
+            alt="logo"
+            class="header-pokeball-logo"
+          />
+        </a>
+      </div>
+      <nav>
+        <ul>
+          <img src="/assets/img/cards-icon-menu.png" alt="" />
+          <li><a href="#cards">Cartes</a></li>
+          <img src="/assets/img/contact-icon-menu.png" alt="" />
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- BANDEAU -->
+    <div class="bandeau">
+      <div class="bg-bandeau"></div>
+      <div>
+        <a href="#">
+          <img
+            src="assets/img/pokeball_PNG19.png"
+            alt="pokeball-logo"
+            class="pokeball-logo"
+          />
+        </a>
+      </div>
     </div>
-    <p id="load">Firebase SDK Loading&hellip;</p>
 
-    <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        const loadEl = document.querySelector('#load');
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-        // // The Firebase SDK is initialized and available here!
-        //
-        // firebase.auth().onAuthStateChanged(user => { });
-        // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
-        // firebase.firestore().doc('/foo/bar').get().then(() => { });
-        // firebase.functions().httpsCallable('yourFunction')().then(() => { });
-        // firebase.messaging().requestPermission().then(() => { });
-        // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
-        // firebase.analytics(); // call to activate
-        // firebase.analytics().logEvent('tutorial_completed');
-        // firebase.performance(); // call to activate
-        //
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+    <!-- TEXT INTRODUCTIF -->
+    <div class="introduction">
+      <h2 class="introduction-text">L'excellence au service des collectionneurs les plus exigeants.</h2>
+    </div>
+    <!-- GROUPE CARDS -->
+    <div id="cards">
+      <!-- GROUPE DE CARTES 1 -->
+      <div class="cards1">
+        <div class="container-pikachu-illustrator">
+          <img
+            src="assets/img/pikachu.png"
+            alt="pikachu-illustrator"
+            class="card-img-pikachu"
+          />
+          <div class="contain-item-description">
+            <div class="item-description">
+              <h3>Pikachu Illustrator</h3>
+              <p>
+                En 1997, CoroCoro a tenu un concours artistique ou les gagnants
+                recevaient cet objet présentant un Pikachu en train de dessiner
+                d'autres Pokémon. <br />
 
-        try {
-          let app = firebase.app();
-          let features = [
-            'auth', 
-            'database', 
-            'firestore',
-            'functions',
-            'messaging', 
-            'storage', 
-            'analytics', 
-            'remoteConfig',
-            'performance',
-          ].filter(feature => typeof app[feature] === 'function');
-          loadEl.textContent = `Firebase SDK loaded with ${features.join(', ')}`;
-        } catch (e) {
-          console.error(e);
-          loadEl.textContent = 'Error loading the Firebase SDK, check the console.';
-        }
-      });
-    </script>
+                <br />Sur les cinq dernièrer années, cette carte s'est
+                contamment vendue entre 195K$ et 200k$
+              </p>
+            </div>
+            <div class="button-price-info">
+              <div class="price-button">6'000'000 P</div>
+              <button
+                class="infos-button-pikachu"
+                type="button"
+                onclick="location.href='cartes/pikachu.html'"
+              >
+                Infos
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="container-dracaufeu-shadow">
+          <img
+            src="assets/img/dracaufeu-holo.jpeg"
+            alt="dracaufeu-shadow"
+            class="card-img-dracaufeu-shadowless"
+          />
+          <div class="contain-item-description">
+            <div class="item-description">
+              <h3>
+                Dracaufeu Holo shadowless <br />
+                1ere édition
+              </h3>
+              <p>
+                Les versions sans ombre (shadowless), qui sont parmi les toutes
+                premières impressions et ne possèdent pas d'ombrage sur les
+                bords de l'illustration. <br />
+
+                <br />Si Dracaufeu holo shadowless n'est techniquement pas la
+                carte Pokémon la plus chère au monde, elle est sans aucun doute
+                la plus emblématique.
+              </p>
+            </div>
+            <div class="button-price-info">
+              <div class="price-button">450'000 P</div>
+              <button
+                class="infos-button-dracaufeu-holo"
+                type="button"
+                onclick="location.href='cartes/dracaufeuH.html'"
+              >
+                Infos
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- GROUPE DE CARTES 2 -->
+      <div class="cards2">
+        <div class="container-dracaufeu-japan">
+          <img
+            src="assets/img/dracaufeu-topsun-front.png"
+            alt="dracaufeu-japan"
+            class="card-img-dracaufeu-japan-front"
+          />
+          <div class="contain-item-description">
+            <div class="item-description">
+              <h3>
+                Dracaufeu Topsun japonais <br />
+                Scarece Blue Back
+              </h3>
+              <p>
+                Ce Dracaufeu Topsun Scarce Blue Back imprimé en 1995 était
+                distribué dans des paquets de chewing gum au Japon <br />
+
+                <br />Seulement deux copies en parfait état (PSA 10) sont
+                connues à ce jour, et nous en avons une pour vous !
+              </p>
+            </div>
+            <div class="button-price-info">
+              <div class="price-button">500'000 P</div>
+              <button
+                class="infos-button-dracaufeu-japan"
+                type="button"
+                onclick="location.href='cartes/dracaufeuT.html'"
+              >
+                Infos
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="container-tortank">
+          <img
+            src="assets/img/tortank.png"
+            alt="tortank"
+            class="card-img-tortank"
+          />
+          <div class="contain-item-description">
+            <div class="item-description">
+              <h3>Tortank Démonstration médiatique</h3>
+              <p>
+                Avant même la sortie de la première édition de Pokémon en
+                anglais. La plus rare et la plus chère d’entre elles semble bien
+                être ce Tortank très spécial. <br />
+
+                <br />Imprimé en 1998, ce Tortank pourrait bien être la première
+                carte dont le texte n’est pas écrit en japonais.
+              </p>
+            </div>
+            <div class="button-price-info">
+              <div class="price-button">360'000 P</div>
+              <button
+                class="infos-button-tortank"
+                type="button"
+                onclick="location.href='cartes/tortank.html'"
+              >
+                Infos
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- AVIS CLIENTS -->
+    <h2>Nos Clients Approuvent</h2>
+    <div class="review">
+      <div class="card-review">
+        <img src="https://picsum.photos/id/65/300/150" alt="photo-client1" />
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam porta
+          magna sed mi tempus pharetra. Etiam tempor lacus vel sapien maximus,
+          rutrum mattis lectus pharetra. Aenean accumsan quis nunc a suscipit.
+          Mauris tincidunt augue at ante mollis
+        </p>
+      </div>
+      <div class="card-review">
+        <img src="https://picsum.photos/id/334/300/150" alt="photo-client1" />
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam porta
+          magna sed mi tempus pharetra. Etiam tempor lacus vel sapien maximus,
+          rutrum mattis lectus pharetra. Aenean accumsan quis nunc a suscipit.
+          Mauris tincidunt augue at ante mollis
+        </p>
+      </div>
+      <div class="card-review">
+        <img src="https://picsum.photos/id/64/300/150" alt="photo-client1" />
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam porta
+          magna sed mi tempus pharetra. Etiam tempor lacus vel sapien maximus,
+          rutrum mattis lectus pharetra. Aenean accumsan quis nunc a suscipit.
+          Mauris tincidunt augue at ante mollis
+        </p>
+      </div>
+    </div>
+
+    <!-- FORMULAIRE DE CONTACT -->
+    <section id="contact">
+      <h2>Nous Contacter</h2>
+      <form action="#">
+        <div class="contact-form">
+          <label for="name">NOM*</label>
+          <input type="text" id="name" name="name" required />
+          <label for="name">Prénom*</label>
+          <input type="text" id="prenom" name="prenom" required />
+          <label for="email">Mail*</label>
+          <input type="email" id="email" name="email" required />
+          <label for="message">Message*</label>
+          <textarea
+            name="message"
+            cols="50"
+            rows="10"
+            id="message"
+            required
+          ></textarea>
+          <p>* Champ obligatoire</p>
+        </div>
+        <!-- MISE EN PLACE DE LA PARTIE BASSE DE LA GAMEBOY -->
+        <div>
+          <div class="gameboy-button">
+            <div class="gameboy-arrows">
+              <div class="vertical-arrow"></div>
+              <div class="hz-arrow"></div>
+            </div>
+            <div class="gameboy-button-a-b">
+              <div class="contact-form-send">
+                <input type="submit" value="SEND" />
+              </div>
+              <div class="cancel-button">
+                <input type="reset" value="RESET" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </form>
+    </section>
+
+    <footer>
+      <div>
+        <img
+          src="assets/img/pokeball_PNG19.png"
+          alt="logo"
+          class="header-pokeball-logo"
+        />
+      </div>
+      <div>
+        <a href="#"><img src="assets/img/instagram.png" alt="instagram" /></a>
+      </div>
+    </footer>
   </body>
 </html>
