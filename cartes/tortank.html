@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Tortank Démonstration médiatique</title>
+  </head>
+  <body>
+    <header>
+      <div>
+        <a href="/index.html">
+          <img
+            src="/assets/img/pokeball_PNG19.png"
+            alt="logo"
+            class="header-pokeball-logo"
+          />
+        </a>
+      </div>
+      <nav>
+        <ul>
+          <img src="/assets/img/cards-icon-menu.png" alt="" />
+          <li><a href="/index.html#cards" class="menu-cartes">Cartes</a></li>
+          <img src="/assets/img/contact-icon-menu.png" alt="" />
+          <li><a href="#contact" class="menu-contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- BANDEAU -->
+    <div class="bandeau">
+      <div class="bg-bandeau"></div>
+      <div>
+        <a href="#">
+          <img
+            src="/assets/img/pokeball_PNG19.png"
+            alt="pokeball-logo"
+            class="pokeball-logo"
+          />
+        </a>
+      </div>
+    </div>
+
+    <!-- TEXT INTRODUCTIF -->
+    <div class="introduction">
+      <h2 class="introduction-text">Tortank Démonstration médiatique</h2>
+    </div>
+
+    <!-- DETAILS CARTE -->
+    <section id="container">
+      <div class="card-info">
+        <div class="pikachu-illustrator">
+          <img
+            src="../assets/img/tortank.png"
+            alt="tortank"
+            class="card-img"
+          />
+        </div>
+        <table>
+          <tr>
+            <th>Lot</th>
+            <th>Etat</th>
+          </tr>
+          <tr>
+            <td>Fait partie du lot numéro XXX</td>
+            <td>Grade 10</td>
+          </tr>
+          <tr>
+            <th>Rareté</th>
+            <th>Edition</th>
+          </tr>
+          <tr>
+            <td>XXX Exemplaire</td>
+            <td>XXXXXX</td>
+          </tr>
+        </table>
+      </div>
+      <div class="price-button">350'000 P</div>
+    </section>
+
+    <!-- FORMULAIRE DE CONTACT -->
+    <section id="contact">
+      <h2>Nous Contacter</h2>
+
+      <form action="#">
+        <div class="contact-form">
+          <label for="name">NOM*</label>
+          <input type="text" id="name" name="name" required />
+          <label for="name">Prénom*</label>
+          <input type="text" id="prenom" name="prenom" required />
+          <label for="email">Mail*</label>
+          <input type="email" id="email" name="email" required />
+          <label for="message">Message*</label>
+          <textarea
+            name="message"
+            cols="50"
+            rows="10"
+            id="message"
+            required
+          ></textarea>
+          <p>* Champ obligatoire</p>
+        </div>
+        <!-- MISE EN PLACE DE LA PARTIE BASSE DE LA GAMEBOY -->
+        <div>
+          <div class="gameboy-button">
+            <div class="gameboy-arrows">
+              <div class="vertical-arrow"></div>
+              <div class="hz-arrow"></div>
+            </div>
+            <div class="gameboy-button-a-b">
+              <div class="contact-form-send">
+                <input type="submit" value="SEND" />
+              </div>
+              <div class="cancel-button">
+                <input type="reset" value="RESET" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </form>
+    </section>
+
+    <footer>
+      <div>
+        <img
+          src="/assets/img/pokeball_PNG19.png"
+          alt="logo"
+          class="header-pokeball-logo"
+        />
+      </div>
+      <div>
+        <a href="#"
+          ><img src="../assets/img/instagram.png" alt="instagram"
+        /></a>
+      </div>
+    </footer>
+  </body>
+</html>
