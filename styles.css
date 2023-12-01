@@ -94,6 +94,15 @@
   flex-direction: column;
   margin: 10px;
   flex-wrap: nowrap;
+  transition: ease-in-out 0.3s;
+  -webkit-transition: ease-in-out 0.3s;
+  -moz-transition: ease-in-out 0.3s;
+  -ms-transition: ease-in-out 0.3s;
+  -o-transition: ease-in-out 0.3s;
+}
+
+.card-review:hover {
+  border: solid black 5px;
 }
 
 .card-review p {
@@ -138,6 +147,7 @@
 }
 
 .contact-form-send {
+  cursor: pointer;
   margin-left: 100%;
 }
 
@@ -345,7 +355,7 @@
   text-align: center;
 }
 
-Oui ... j'ai pompé l'effet, mais je voulais vraiment celui-là ah ah 
+Oui ... j'ai pompé l'effet, mais je voulais vraiment celui-là ah ah
 @keyframes typewriter {
   from {
     width: 0;
@@ -439,6 +449,10 @@ Oui ... j'ai pompé l'effet, mais je voulais vraiment celui-là ah ah
   -o-transform: scale(0.9);
 }
 
+a:link, a:visited{
+  text-decoration: none;
+}
+
 footer {
   display: flex;
   margin-top: 30px;
@@ -464,6 +478,10 @@ header li {
 
 html{
   scroll-behavior: smooth;
+}
+
+input:hover{
+  cursor: pointer;
 }
 
 label {
