@@ -449,7 +449,8 @@ Oui ... j'ai pompé l'effet, mais je voulais vraiment celui-là ah ah
   -o-transform: scale(0.9);
 }
 
-a:link, a:visited{
+a:link,
+a:visited {
   text-decoration: none;
 }
 
@@ -476,11 +477,11 @@ header li {
   width: 60px;
 }
 
-html{
+html {
   scroll-behavior: smooth;
 }
 
-input:hover{
+input:hover {
   cursor: pointer;
 }
 
@@ -500,7 +501,7 @@ nav img {
   width: 7%;
 }
 
-@media screen and (max-width: 900px) and (min-device-width: 0px) {
+@media screen and (max-width: 900px) and (min-width: 0px) {
   #cards {
     flex-direction: column;
   }
@@ -523,6 +524,59 @@ nav img {
 
   .gameboy-button {
     width: 80%;
+  }
+
+  .review {
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-device-width: 430px) and (min-device-width: 0px) {
+  .bg-bandeau {
+    height: 150px;
+  }
+
+  #cards {
+    flex-direction: column;
+  }
+
+  #cards img {
+    height: 200px;
+    width: fit-content;
+  }
+
+  .contact-form {
+    width: 80%;
+  }
+
+  .contact-form input {
+    background-color: rgb(185, 185, 185);
+    font-family: "Courier New", Courier, monospace;
+    width: 90%;
+  }
+
+  .contact-form textarea {
+    background-color: rgb(185, 185, 185);
+    font-family: "Courier New", Courier, monospace;
+    width: 90%;
+  }
+
+  #cards [class^="container"] {
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .gameboy-button {
+    width: 80%;
+  }
+
+  .introduction {
+    align-items: center;
+    border-bottom: 4px solid #f24822;
+    border-top: 4px solid #f24822;
+    border-left: 10px solid #f24822;
+    border-right: 10px solid #f24822;
+    width: 95%;
   }
 
   .review {
