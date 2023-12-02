@@ -502,6 +502,10 @@ nav img {
   width: 7%;
 }
 
+table{
+  margin-top: 30px;
+}
+
 @media screen and (max-width: 900px) and (min-width: 0px) {
   #cards {
     flex-direction: column;
