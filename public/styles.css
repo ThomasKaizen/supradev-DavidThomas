@@ -118,7 +118,7 @@
   text-align: center;
 }
 
-.contact-form {
+.contact-form{
   align-items: center;
   background-color: grey;
   border: solid black 10px;
@@ -422,6 +422,7 @@ Oui ... j'ai pompé l'effet, mais je voulais vraiment celui-là ah ah
 }
 
 .review {
+  background-color: rgba(128, 128, 128, 0.1);
   display: flex;
 }
 
@@ -568,6 +569,10 @@ nav img {
 
   .gameboy-button {
     width: 80%;
+  }
+
+  .header-pokeball-logo {
+    width: 8%;
   }
 
   .introduction {

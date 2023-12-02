@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
-    <link rel="icon" href="assets/img/tab-icon.png">
+    <link rel="icon" href="assets/img/tab-icon.png" />
     <title>Best Pokemon Cards</title>
   </head>
   <body>
@@ -20,9 +20,12 @@
       </div>
       <nav>
         <ul>
-          <img src="/assets/img/cards-icon-menu.png" alt="" />
+          <img src="/public/assets/img/cards-icon-menu.png" alt="img-cards" />
           <li><a href="#cards">Cartes</a></li>
-          <img src="/assets/img/contact-icon-menu.png" alt="" />
+          <img
+            src="/public/assets/img/contact-icon-menu.png"
+            alt="contact-icon"
+          />
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
@@ -44,7 +47,9 @@
 
     <!-- TEXT INTRODUCTIF -->
     <div class="introduction">
-      <h2 class="introduction-text">L'excellence au service des collectionneurs les plus exigeants</h2>
+      <h2 class="introduction-text">
+        L'excellence au service des collectionneurs les plus exigeants
+      </h2>
     </div>
     <!-- GROUPE CARDS -->
     <div id="cards">
@@ -219,42 +224,54 @@
     <!-- FORMULAIRE DE CONTACT -->
     <section id="contact">
       <h2>Nous Contacter</h2>
-      <form action="#">
+      <form action="#" method="post">
         <div class="contact-form">
-          <label for="name">NOM*</label>
-          <input type="text" id="name" name="name" required />
-          <label for="name">Prénom*</label>
-          <input type="text" id="prenom" name="prenom" required />
-          <label for="email">Mail*</label>
-          <input type="email" id="email" name="email" required />
-          <label for="message">Message*</label>
-          <textarea
-            name="message"
-            cols="50"
-            rows="10"
-            id="message"
-            required
-          ></textarea>
+          <table>
+            <tr>
+              <td><label for="name">NOM*</label></td>
+              <td><input type="text" id="name" name="name" required /></td>
+            </tr>
+            <tr>
+              <td><label for="name">Prénom*</label></td>
+              <td><input type="text" id="prenom" name="prenom" required /></td>
+            </tr>
+            <tr>
+              <td><label for="email">Mail*</label></td>
+              <td><input type="email" id="email" name="email" required /></td>
+            </tr>
+            <tr>
+              <td><label for="message">Message*</label></td>
+              <td>
+                <textarea
+                  name="message"
+                  cols="50"
+                  rows="10"
+                  id="message"
+                  required
+                ></textarea>
+              </td>
+            </tr>
+          </table>
           <p>* Champ obligatoire</p>
-        </div>
-        <!-- MISE EN PLACE DE LA PARTIE BASSE DE LA GAMEBOY -->
-        <div>
-          <div class="gameboy-button">
-            <div class="gameboy-arrows">
-              <div class="vertical-arrow"></div>
-              <div class="hz-arrow"></div>
-            </div>
-            <div class="gameboy-button-a-b">
-              <div class="contact-form-send">
-                <input type="submit" value="SEND" />
-              </div>
-              <div class="cancel-button">
-                <input type="reset" value="RESET" />
-              </div>
-            </div>
           </div>
-        </div>
-      </form>
+            <!-- MISE EN PLACE DE LA PARTIE BASSE DE LA GAMEBOY -->
+            <div>
+              <div class="gameboy-button">
+                <div class="gameboy-arrows">
+                  <div class="vertical-arrow"></div>
+                  <div class="hz-arrow"></div>
+                </div>
+                <div class="gameboy-button-a-b">
+                  <div class="contact-form-send">
+                    <input type="submit" value="SEND" />
+                  </div>
+                  <div class="cancel-button">
+                    <input type="reset" value="RESET" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </form>
     </section>
 
     <footer>
