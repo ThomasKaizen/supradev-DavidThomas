@@ -379,6 +379,7 @@ th {
   table {
     border: solid 1.5px black;
     text-align: center;
+    margin-bottom: 10px;
     margin-top: 10px;
   }
 }
