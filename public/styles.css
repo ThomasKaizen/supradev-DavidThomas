@@ -562,6 +562,10 @@ table{
     width: 95%;
   }
 
+  .introduction-text {
+    font-size: 20px;
+  }
+
   .review {
     flex-direction: column;
   }

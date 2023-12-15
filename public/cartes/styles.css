@@ -374,12 +374,107 @@ th{
   }
 
   .price-button{
-    width: 15%;
+    width: 100px;
   }
 
   table{
     border: solid 1.5px black;
     text-align: center;
+    margin-top: 10px;
+  }
+
+}
+
+@media only screen and (max-device-width: 900) and (min-device-width: 0px) {
+  #cards {
+    flex-direction: column;
+  }
+
+  .contact-form {
+    width: 80%;
+  }
+
+  .contact-form input {
+    background-color: rgb(185, 185, 185);
+    font-family: "Courier New", Courier, monospace;
+    width: 90%;
+  }
+
+  .contact-form textarea {
+    background-color: rgb(185, 185, 185);
+    font-family: "Courier New", Courier, monospace;
+    width: 90%;
+  }
+
+  .gameboy-button {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-device-width: 430px) and (min-device-width: 0px) {
+  .bg-bandeau {
+    height: 150px;
+  }
+
+  #cards {
+    flex-direction: column;
+  }
+
+  #cards img {
+    height: 200px;
+    width: fit-content;
+  }
+
+  .contact-form {
+    width: 80%;
+  }
+
+  .contact-form input {
+    background-color: rgb(185, 185, 185);
+    font-family: "Courier New", Courier, monospace;
+    width: 90%;
+  }
+
+  .contact-form textarea {
+    background-color: rgb(185, 185, 185);
+    font-family: "Courier New", Courier, monospace;
+    width: 90%;
+  }
+
+  .card-info{
+    flex-direction: column;
+  }
+
+  .gameboy-arrows {
+    transform: scale(0.8);
+    -webkit-transform: scale(0.8);
+    -moz-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    -o-transform: scale(0.8);
+}
+  .gameboy-button-a-b {
+    transform: scale(0.8);
+    -webkit-transform: scale(0.8);
+    -moz-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    -o-transform: scale(0.8);
+}
+
+  .header-pokeball-logo {
+    width: 8%;
+  }
+
+  .introduction {
+    align-items: center;
+    border-bottom: 4px solid #f24822;
+    border-top: 4px solid #f24822;
+    border-left: 10px solid #f24822;
+    border-right: 10px solid #f24822;
+    width: 95%;
+  }
+
+  .introduction-text {
+    font-size: 20px;
   }
 
 }
