@@ -297,7 +297,12 @@
 
 footer {
   display: flex;
-  margin-top: 30px;
+  align-items: center;
+  background-color: rgb(217, 217, 217);
+  color: rgb(152, 151, 151);
+  height: 100px;
+  justify-content: center;
+  margin-top: 40px;
 }
 
 h2 {
@@ -314,8 +319,9 @@ header {
 
 header li {
   list-style-type: none;
-  text-align: end;
-  width: 60px;
+  margin: auto;
+  text-align: center;
+  width: 80px;
 }
 
 label {
